@@ -1,0 +1,294 @@
+.image-div {
+    background-image: url("https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/v1/what_we_do/hero_desktop.png");
+    background-color: white;
+    /* background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+    width: 100%;
+    height: 100%; */
+    /* min-height: 1000px;
+    width: 100%; */
+    position: relative;
+    height: 440px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+}
+
+.image-div-container {
+    font-family: 'PT Sans', 'Noto Sans HK', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+}
+
+.image-div-header {
+    font-size: 48px;
+    font-weight: 700;
+    
+}
+
+.image-div-paragragh {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.robot-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.robot-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 820px;
+}
+
+.robot-image {
+    height: 320px;
+    width: 434px;
+    padding-bottom: 16px;
+}
+
+.robot-title {
+    font-size: 32px;
+    margin-top: 0px;
+    margin-bottom: 32px;
+}
+
+.robot-p {
+    font-size: 16px;
+    text-align: left;
+    font-weight: lighter;
+}
+
+.journey {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+}
+
+.graphic {
+    width: 485px;
+    margin-bottom: 32px;
+}
+
+.journey-title {
+    margin-bottom: 32px;
+}
+
+.journey-p-container {
+    width: 800px;
+}
+
+.journey-text {
+    margin-bottom: 24px;
+}
+
+.email-div {
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+}
+
+.email-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 820px;
+}
+
+.email-div-input {
+    display: flex;
+    flex-direction: row;
+}
+
+.email-div-text-input {
+    background-color: white;
+    border: 1px solid lightgrey;
+    width: 320px;
+    margin-right: 20px;
+    padding: 5px 15px;
+    font-size: 14px;
+}
+
+.email-div-text-input:hover {
+    border: 1px solid black;
+}
+
+.email-div-title {
+    margin-bottom: 20px;
+}
+
+.email-div-p {
+    margin-bottom: 20px;
+}
+
+.terms-conditions-checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.checkbox-privacy-policy {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.fav-campaigns {
+    display: flex;
+    flex-direction: row;
+    height: 1300;
+}
+
+.fav-campaign-side {
+    width: 66.66666666666%;
+    height: 100%;
+}
+
+.fav-campaigns-top-half {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.fav-campaigns-top-row {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 60px;
+    border-bottom: 2px solid lightgrey;
+}
+
+.fav-campaigns-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 60px;
+    width: 50%;
+}
+
+.fav-campaigns-title {
+    align-content: center;
+    margin-top: 64px;
+    font-size: 24px;
+}
+
+.fav-campaign-items-image {
+    height: 135px;
+    width: auto;
+    margin-bottom: 30px;
+}
+
+.fav-campaign-items-num-backers {
+    margin: 0px;
+    font-weight: thin;
+}
+
+.fav-campaign-items-desc {
+    font-size: 15px;
+    font-weight: thin;
+    margin-top: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* max-width: 284px; */
+}
+
+.fav-campaign-items-title {
+    font-weight: bolder;
+}
+
+.fav-campaigns-bottom-half {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.fav-campaigns-bottom-row {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 60px;
+}
+
+.bike-side {
+    position: relative;
+    overflow: hidden;
+    width: 33.33333333333%;
+    background-color: rgb(224, 244, 235);
+}
+
+.bike {
+    position: absolute;
+    transform: rotate(60deg);
+    right: -400px;
+    bottom: 30px;
+    width: 1200px;
+}
+
+.bike-icon {
+    fill: #E51075;
+    stroke: rgb(158, 32, 94);
+    stroke-width: 4;
+    width: 75px;
+    height: 75px;
+    margin-bottom: 26px;
+}
+
+.spark-icon {
+    fill: #E51075;
+    stroke: rgb(158, 32, 94);
+    stroke-width: 4;
+    width: 75px;
+    height: 75px;
+    margin-bottom: 26px;
+}
+
+.explore-inspired {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.explore-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0px 60px;
+    padding: 40px 15px 60px;
+    border-right: 1px solid lightgrey;
+    width: 50%;
+}
+
+.inspire-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0px 60px;
+    padding: 40px 15px 60px;
+    border-left: 1px solid lightgrey;
+    width: 50%;
+}
+
+.explore-inspire-titles {
+    margin-bottom: 30px;
+}

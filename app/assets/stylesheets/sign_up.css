@@ -1,0 +1,15 @@
+.sign-up-grey-background {
+    background-color: rgba(125, 125, 125, 0.4);
+    width: 100%;
+    height: 100%;
+}
+
+.sign-up-content {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+}
+
+.sign-up-input {
+    background-color: white;
+}

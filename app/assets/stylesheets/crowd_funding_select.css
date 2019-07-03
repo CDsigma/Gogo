@@ -1,0 +1,26 @@
+.crowd-funding-select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.crowd-funding-select-robot-image {
+    margin-top: 64px;
+    width: 300px;
+}
+
+.crowd-funding-select-title {
+    margin-top: 20px;
+}
+
+.crowd-funding-select-sub-title {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.crowd-funding-options {
+    display: flex;
+    flex-direction: row;
+}

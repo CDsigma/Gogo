@@ -1,0 +1,87 @@
+html {
+    font-family: 'Noto Sans HK', 'PT Sans', sans-serif;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 19px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.root {
+    width: 100%;
+    height: 100%;
+}
+
+.full-window {
+    width: 100%;
+    height: 100%;
+}
+
+.color-flip-button {
+    border: 2px solid #E51075;
+    background-color: white;
+    color: rgb(212, 51, 116);
+    padding-top: 5px;
+    padding-bottom: 7px;
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 3px;
+}
+
+.color-flip-button:hover {
+    border: 2px solid #E51075;
+    background-color: #E51075;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 3px;
+}
+
+.color-button {
+    background-color: rgb(230, 21, 116);
+    color: white;
+    padding: 11px 18px;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 3px;
+}
+
+.color-button:hover {
+    background-color: rgb(197, 47, 108);
+}
+
+.purple-hover-btn:hover {
+    color: rgb(212, 51, 116);
+}
+
+.purple-hover-btn {
+    font-size: 15px;
+    padding: 10px;
+}
+
+/* svg .gradient-bg {
+  fill:  #fff;
+} */
+
+/* #header-shape-gradient {
+  --color-stop: #f12c06;
+  --color-bot: #faed34;
+} */
