@@ -5,6 +5,7 @@
     border-bottom: 1px solid lightgrey;
     font-weight:800;
     font-family: 'PT Sans', 'Noto Sans HK', sans-serif;
+    overflow: visible;
     /* font-weight: Black Italic; */
 }
 
@@ -20,8 +21,13 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding-left: 24px;
+    margin-left: 24px;
 }
+
+.logged-in-options:hover {
+    cursor: pointer;
+}
+
 .logged-out-options {
     display: flex;
     flex-direction: row;
@@ -33,7 +39,7 @@
 }
 
 .header-logo {
-    width: 160px;
+    width: 85px;
     height: 24px;
     padding-top: 5px;
     padding-left: 10px;
@@ -58,4 +64,47 @@
 #nav-bar-start-campaign-button {
     border-right: 1px solid lightgrey;
     /* margin-right: 24px; */
+}
+
+.drop-down-menu-visable {
+    position: absolute;
+    top: 59px;
+    right: 0px;
+    z-index: 1;
+    background-color: white;
+    border: 1px solid lightgrey;
+    padding: 8px;
+    width: 140px;
+}
+
+.drop-down-menu-option {
+}
+
+.drop-down-menu-option-title {
+    font-size: 14px;
+    padding: 12px;
+    width: 100%;
+}
+
+.drop-down-menu-option-title:hover {
+    color: rgb(197, 47, 108);
+}
+
+.gogo-svg-icon {
+    width: 80px;
+    height: 24px;
+
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    fill: rgb(229, 20, 116);
+
+    position: relative;
+}
+
+.gogo-path {
+    position: absolute;
+    /* clip: rect(0, 100px, 0px, 0); */
+    margin-right: -100px;
 }

@@ -1,18 +1,50 @@
 import React, { Component } from 'react'
+import DropDown from './user_drop_down_options'
 
 export default class LoggedInOptions extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            visable: false
+        }
+
+        this.toggleMenu = this.toggleMenu.bind(this);
+    }
 
     toggleMenu() {
+        if(this.state.visable) {
+            this.setState({
+                visable: false
+            })
+        } else {
+            this.setState({
+                visable: true
+            })
+        }
+
+        //this whole toggle thing is stupid instead do a menu that is always exists and then modify 
+        //the value of visable or location or what evs to render it
+        //class is user_drop_down_options
     }
 
     render() {
         let currentUser = store.getState().session.first_name
-        return (
-            <div className="logged-in-options" onClick={toggleMenu}>
-                <img className="logged-in-options-robot-image" src="https://g1.iggcdn.com/assets/individuals/missing/thumbnail-deaf450c2d4183b9309b493f6a7b20d62f8d31617ec828d060df465abe92ef2a.png" alt=""/>
-                <h1 className="user-menu">{currentUser}</h1>
-            </div>
-        )
+        if(this.state.visable) {
+            return (
+                <div className="logged-in-options">
+                    <img onClick={this.toggleMenu} className="logged-in-options-robot-image" src={"user-default-profile-picture.png"} alt=""/>
+                    <button onClick={this.toggleMenu} className="user-menu">{currentUser}</button>
+                    <DropDown />
+                </div>
+            )
+        } else {
+            return (
+                <div className="logged-in-options">
+                    <img onClick={this.toggleMenu} className="logged-in-options-robot-image" src={"user-default-profile-picture.png"} alt="" />
+                    <button onClick={this.toggleMenu} className="user-menu">{currentUser}</button>
+                </div>
+            )
+        }
     }
 }

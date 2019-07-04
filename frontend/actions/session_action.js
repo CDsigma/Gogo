@@ -34,5 +34,5 @@ export const login = user => dispatch => (
     )
 );
 
-export const logout = () => dispatch => deleteSession()
+export const logout = () => dispatch => SessionApiUtil.deleteSession()
     .then(() => dispatch(logoutCurrentUser()));

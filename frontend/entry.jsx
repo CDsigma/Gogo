@@ -21,9 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
         store = configureStore();
     }
 
-    // window.createNewUser = createNewUser;
-    // window.dispatch = store.dispatch;
-    // window.store = store;
+    window.createNewUser = createNewUser;
+    window.dispatch = store.dispatch;
+    window.store = store;
 
     const root = document.getElementById('root');
     ReactDOM.render(<Root store={store} />, root);

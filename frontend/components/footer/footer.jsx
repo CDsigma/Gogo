@@ -6,7 +6,7 @@ export default class Footer extends Component {
         return (
             <div className="footer">
                 <a href="https://www.bbb.org/us/ca/san-francisco/profile/crowdfunding/indiegogo-1116-372843#bbblogo">
-                    <img className="accredited-bussiness" src="https://www.indiegogo.com/images/bbbImage.png" alt=""/>
+                    <img className="accredited-bussiness" src={"acc-bus.png"} alt=""/>
                 </a>
 
                 <a href="https://www.linkedin.com/in/wesley-arrington/"> <LinkedInIcon className="linked-in-icon" /> </a>

@@ -6,7 +6,7 @@ export default class Journey extends Component {
         return (
             <div className="journey">
                 <h1 className="journey-title">Join the journey from idea to market</h1>
-                <img className="graphic" src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/v1/what_we_do/timeline_desktop_2x.png"/>
+                <img className="graphic" src={"timeline-image.png"}/>
                 <div className="journey-p-container">
                     <p className="journey-text">With Indiegogo, you have the opportunity to support entrepreneurs 
                         and new technology from the earliest stages of development. 

@@ -8,22 +8,22 @@ export default class RightNavBarItems extends Component {
 
 
     render() {
-        // let currentSession = store.getState().session.currentUser
-        // if (currentSession !== null) {
-        //     return (
-        //         <div className="right-nav-bar-items">
-        //             <StartCampaign />
-        //             <LoggedInOptions />
-        //         </div>
-        //     )
-        // } else {
+        let currentSession = store.getState().session.currentUser
+        if (currentSession !== null) {
+            return (
+                <div className="right-nav-bar-items">
+                    <StartCampaign />
+                    <LoggedInOptions />
+                </div>
+            )
+        } else {
             return (
                 <div className="right-nav-bar-items">
                     <StartCampaign />
                     <LoggedOutOptions />
                 </div>
             )
-        // }
+        }
         // return (
         //     <div className="right-nav-bar-items">
         //         < componentToRender />
