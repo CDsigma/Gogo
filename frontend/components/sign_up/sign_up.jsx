@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import NavBar from '../nav_bar/nav_bar';
+import CloseIcon from '../general_purpose_icons/close_icon'
 
 export default class SignUp extends Component {
     constructor(props) {
@@ -35,27 +36,26 @@ export default class SignUp extends Component {
         return (
             <div className="session-grey-background" onClick={this.props.toggleSignUpModal}>
                 <div onClick={e => e.stopPropagation()}>
-                    <form className="session-content" onSubmit={this.handleSubmit}>
-                        <h3>Welcome!</h3>
-                        <h4>Sign up to join Gogo.</h4>
+                    <form className="sign-up-session-content" onSubmit={this.handleSubmit}>
+                        <button onClick={this.props.toggleSignUpModal} className="close-icon-button"><CloseIcon /></button>
 
-                        <label htmlFor="">First Name
-                            <input className="session-input" type="text" value={this.state.first_name} onChange={this.handleInput('first_name')}/>
-                        </label>
+                        <h3 className="session-title">Welcome!</h3>
+                        <h4 className="session-login-signup-subtitle">Sign up to join Gogo.</h4>
 
-                        <label>Last Name
-                            <input className="session-input" type="text" value={this.state.last_name} onChange={this.handleInput('last_name')}/>
-                        </label>
+                        <p className="session-label">First Name</p>
+                        <input className="session-input" type="text" value={this.state.first_name} onChange={this.handleInput('first_name')}/>
 
-                        <label>Email
-                            <input className="session-input" type="text" value={this.state.email} onChange={this.handleInput('email')}/>
-                        </label>
+                        <p className="session-label">Last Name</p>
+                        <input className="session-input" type="text" value={this.state.last_name} onChange={this.handleInput('last_name')}/>
 
-                        <label htmlFor="">Password
-                            <input className="session-input" type="password" value={this.state.password} onChange={this.handleInput('password')}/>
-                        </label>
+                        <p className="session-label">Email</p>
+                        <input className="session-input" type="text" value={this.state.email} onChange={this.handleInput('email')}/>
+                       
 
-                        <button type="submit"> Sign Up </button>
+                        <p className="session-label">Password</p>
+                        <input className="session-input" type="password" value={this.state.password} onChange={this.handleInput('password')}/>
+
+                        <button type="submit" className="color-button" id="session-submit-button"> Sign Up </button>
                     </form>
                 </div>
             </div>

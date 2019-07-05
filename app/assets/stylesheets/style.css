@@ -77,6 +77,16 @@ body {
     padding: 10px;
 }
 
+.close-icon {
+    width: 16px;
+    height: 16px;
+    fill: rgb(106, 106, 106);
+}
+
+.close-icon:hover {
+    fill: black;
+}
+
 /* svg .gradient-bg {
   fill:  #fff;
 } */
