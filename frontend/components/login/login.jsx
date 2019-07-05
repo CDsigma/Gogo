@@ -40,23 +40,24 @@ export default class Login extends Component {
         // if (!this.state.visible) {
         //     return <div></div>;
         // }
+        // debugger;
         return (
-            <div className="sign-up-grey-background">
-                <NavBar />
-                <form className="sign-up-content" onSubmit={this.handleSubmit}>
-                    <h3>Welcome!</h3>
-                    <h4>SIGN INNNN</h4>
+            <div className="session-grey-background" onClick={this.props.toggleLoginModal}>
+                <div onClick={e => e.stopPropagation()}>
+                    <form className="session-content" onSubmit={this.handleSubmit}>
+                        <h3 className="session-title">Welcome back!</h3>
+                        <h4 className="session-login-subtitle">Log in to continue.</h4>
 
-                    <label>Email
-                        <input className="sign-up-input" type="text" value={this.state.email} onChange={this.handleInput('email')} />
-                    </label>
+                        <p className="session-email-label">Email</p>
+                            <input className="session-input" type="text" value={this.state.email} onChange={this.handleInput('email')} />
 
-                    <label htmlFor="">Password
-                        <input className="sign-up-input" type="password" value={this.state.password} onChange={this.handleInput('password')} />
-                    </label>
+                        <p className="session-password-label">Password</p>
+                        <input className="session-input" type="password" value={this.state.password} onChange={this.handleInput('password')} />
+                        
 
-                    <button type="submit"> Sign Up </button>
-                </form>
+                        <button type="submit" className="color-button" id="session-submit-button"> LOG IN </button>
+                    </form>
+                </div>
             </div>
         )
     }

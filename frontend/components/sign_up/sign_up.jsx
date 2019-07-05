@@ -33,30 +33,31 @@ export default class SignUp extends Component {
         //     return <div></div>;
         // }
         return (
-            <div className="sign-up-grey-background">
-                <NavBar />
-                <form className="sign-up-content" onSubmit={this.handleSubmit}>
-                    <h3>Welcome!</h3>
-                    <h4>Sign up to join Indiegogo.</h4>
+            <div className="session-grey-background" onClick={this.props.toggleSignUpModal}>
+                <div onClick={e => e.stopPropagation()}>
+                    <form className="session-content" onSubmit={this.handleSubmit}>
+                        <h3>Welcome!</h3>
+                        <h4>Sign up to join Gogo.</h4>
 
-                    <label htmlFor="">First Name
-                        <input className="sign-up-input" type="text" value={this.state.first_name} onChange={this.handleInput('first_name')}/>
-                    </label>
+                        <label htmlFor="">First Name
+                            <input className="session-input" type="text" value={this.state.first_name} onChange={this.handleInput('first_name')}/>
+                        </label>
 
-                    <label>Last Name
-                        <input className="sign-up-input" type="text" value={this.state.last_name} onChange={this.handleInput('last_name')}/>
-                    </label>
+                        <label>Last Name
+                            <input className="session-input" type="text" value={this.state.last_name} onChange={this.handleInput('last_name')}/>
+                        </label>
 
-                    <label>Email
-                        <input className="sign-up-input" type="text" value={this.state.email} onChange={this.handleInput('email')}/>
-                    </label>
+                        <label>Email
+                            <input className="session-input" type="text" value={this.state.email} onChange={this.handleInput('email')}/>
+                        </label>
 
-                    <label htmlFor="">Password
-                        <input className="sign-up-input" type="password" value={this.state.password} onChange={this.handleInput('password')}/>
-                    </label>
+                        <label htmlFor="">Password
+                            <input className="session-input" type="password" value={this.state.password} onChange={this.handleInput('password')}/>
+                        </label>
 
-                    <button type="submit"> Sign Up </button>
-                </form>
+                        <button type="submit"> Sign Up </button>
+                    </form>
+                </div>
             </div>
         )
     }

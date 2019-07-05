@@ -18,8 +18,6 @@ export default () => (
         <Route exact path="/start-a-campaign" component={StartACampaign} />
         <Route exact path="/about/what-we-do" component={WhatWeDo} />
         <Route exact path="/explore" component={Explore} />
-        <Route exact path="/login" component={LoginContainer} />
-        <Route exact path="/sign-up" component={SignUpContainer} />
         {/* <Route path="/signup" component={SignupContainer} />
         <Route path="/login" component={LoginContainer} /> */}
     </div>

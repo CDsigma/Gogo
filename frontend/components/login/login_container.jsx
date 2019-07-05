@@ -4,12 +4,15 @@ import { Link } from 'react-router-dom';
 import { login } from '../../actions/session_action';
 import Login from './login';
 
-// const mapStateToProps = ({ errors }) => {
-//     return {
-//         // errors: errors.session,
-//         formType: 'login'
-//     };
-// };
+const mapStateToProps = ({ errors }, ownProps)  => {
+    // debugger;
+    return {
+        // errors: errors.session,
+        // formType: 'login'
+        
+        toggleLoginModal: ownProps.toggleLoginModal
+    };
+};
 
 const mapDispatchToProps = dispatch => {
     return {
@@ -17,7 +20,7 @@ const mapDispatchToProps = dispatch => {
     };
 };
 
-export default connect(null, mapDispatchToProps)(Login);
+export default connect(mapStateToProps, mapDispatchToProps)(Login);
 
 // import { connect } from 'react-redux';
 // import { createNewUser } from '../../actions/session_action';
