@@ -10,7 +10,7 @@ export default class ImageDiv extends Component {
                     <p className="image-div-paragragh">With both live crowdfunding campaigns and innovative 
                         products shipping now, there’s no better place to 
                         start the hunt for cool and clever innovations 
-                        that surprise and delight. Indiegogo is where <em>new</em> launches.
+                        that surprise and delight. Gogo is where <em>new</em> launches.
                         </p>
                 </div>
             </div>

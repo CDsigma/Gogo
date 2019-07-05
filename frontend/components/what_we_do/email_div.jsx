@@ -8,7 +8,7 @@ export default class email_div extends Component {
                     <h1 className="email-div-title">Great finds, delivered daily</h1>
 
                     <p className="email-div-p">We surface the best and brightest of 
-                        Indiegogo in our newsletter. Sign up 
+                        Gogo in our newsletter. Sign up 
                         to find out about great technology, 
                         design, film, and much more — all before 
                         it hits the mainstream.</p>
