@@ -125,7 +125,7 @@
     font-size: 14px;
 }
 
-.email-div-text-input:hover {
+.email-div-text-input:focus {
     border: 1px solid black;
 }
 

@@ -48,7 +48,7 @@ export default class Login extends Component {
         // debugger;
 
         const demoUser = {
-            email: 'password',
+            email: 'sally@gmail.com',
             password: 'password'
         };
 

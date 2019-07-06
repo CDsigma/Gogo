@@ -8,8 +8,10 @@ export default class RightNavBarItems extends Component {
 
 
     render() {
-        let currentSession = store.getState().session.currentUser
-        if (currentSession !== null) {
+        // let currentSession = store.getState().session.currentUser
+        // debugger;
+        let {currentUserId} = this.props
+        if (currentUserId !== null) {
             return (
                 <div className="right-nav-bar-items">
                     <StartCampaign />
