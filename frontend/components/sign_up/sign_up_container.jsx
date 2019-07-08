@@ -1,9 +1,10 @@
 import { connect } from 'react-redux';
-import { createNewUser } from '../../actions/session_action';
+import { createNewUser } from '../../actions/session_actions';
 import Signup from './sign_up';
 
 const mapStateToProps = ({ errors }, ownProps) => {
     return {
+        errors: errors.session,
         toggleSignUpModal: ownProps.toggleSignUpModal
     };
 };

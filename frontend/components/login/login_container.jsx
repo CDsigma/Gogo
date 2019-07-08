@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { login } from '../../actions/session_action';
+import { login } from '../../actions/session_actions';
 import Login from './login';
 
 const mapStateToProps = ({ errors }, ownProps)  => {
@@ -9,7 +9,7 @@ const mapStateToProps = ({ errors }, ownProps)  => {
     return {
         // errors: errors.session,
         // formType: 'login'
-        
+        errors: errors.session,
         toggleLoginModal: ownProps.toggleLoginModal
     };
 };

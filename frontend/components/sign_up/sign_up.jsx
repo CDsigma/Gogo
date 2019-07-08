@@ -28,6 +28,18 @@ export default class SignUp extends Component {
             //.then(() => this.props.history.push('/user'));
     }
 
+    renderErrors() {
+        return (
+            <ul className="session-error-messages-list">
+                {this.props.errors.map((error, i) => (
+                    <li key={`error-${i}`} className="session-error-message">
+                        {error}
+                    </li>
+                ))}
+            </ul>
+        );
+    }
+
 
     render() {
         // if (!this.state.visible) {
@@ -54,6 +66,8 @@ export default class SignUp extends Component {
 
                         <p className="session-label">Password</p>
                         <input className="session-input" type="password" value={this.state.password} onChange={this.handleInput('password')}/>
+
+                        {this.renderErrors()}
 
                         <button type="submit" className="color-button" id="session-submit-button"> Sign Up </button>
                     </form>

@@ -74,6 +74,17 @@ export default class Login extends Component {
         document.getElementById("password-input").blur();
     }
 
+    renderErrors() {
+        return (
+            <ul className="session-error-messages-list">
+                {this.props.errors.map((error, i) => (
+                    <li key={`error-${i}`} className="session-error-message">
+                        {error}
+                    </li>
+                ))}
+            </ul>
+        );
+    }
 
     render() {
         // if (!this.state.visible) {
@@ -94,6 +105,7 @@ export default class Login extends Component {
                         <p className="session-password-label">Password</p>
                         <input className="session-input" id="password-input" type="password" value={this.state.password} onChange={this.handleInput('password')} />
                         
+                        {this.renderErrors()}
 
                         <button type="submit" className="color-button" id="session-submit-button"> LOG IN </button>
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import configureStore from './components/store/store';
-import { createNewUser } from './actions/session_action'
+import { createNewUser } from './actions/session_actions'
 
 import Root from './components/root'
 

@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import LoginContainer from '../login/login_container'
 import Login from '../login/login'
+import { RECEIVE_SESSION_ERRORS } from '../../actions/session_actions';
+import { receiveErrors } from '../../actions/session_actions'
 
 
 export default class LoginButton extends Component {
@@ -26,6 +28,9 @@ export default class LoginButton extends Component {
                 loginVisable: true
             })
         }
+
+
+        dispatch(receiveErrors([]))
     }
 
     render() {
