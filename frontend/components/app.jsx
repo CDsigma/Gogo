@@ -8,6 +8,7 @@ import StartACampaign from './start_a_campaign/start_a_campaign'
 import SignUpContainer from './sign_up/sign_up_container'
 import LoginContainer from './login/login_container'
 import Explore from './explore/explore'
+import Profile  from './profile/profile'
 import { Route } from 'react-router-dom';
 //import { AuthRoute } from './utils/route_util';
 
@@ -18,6 +19,7 @@ export default () => (
         <Route exact path="/start-a-campaign" component={StartACampaign} />
         <Route exact path="/about/what-we-do" component={WhatWeDo} />
         <Route exact path="/explore" component={Explore} />
+        <Route exact path="/users/:userId" component={Profile} />
         {/* <Route path="/signup" component={SignupContainer} />
         <Route path="/login" component={LoginContainer} /> */}
     </div>

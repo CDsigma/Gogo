@@ -6,7 +6,7 @@ export default class ExploreButton extends Component {
         return (
             <div>
                 <Link to='/explore'>
-                <button className="purple-hover-btn">Explore</button>
+                    <button className="purple-hover-btn">Explore</button>
                 </Link>
             </div>
         )
