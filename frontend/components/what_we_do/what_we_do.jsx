@@ -11,7 +11,7 @@ import Footer from '../footer/footer'
 export default class WhatWeDo extends Component {
     render() {
         return (
-            <div>
+            <div className="what-we-do-container">
                 <NavBar />
                 <ImageDiv />
                 <RobotDiv />

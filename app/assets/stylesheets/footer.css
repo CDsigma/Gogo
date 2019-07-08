@@ -9,10 +9,7 @@
     flex-direction: row;
     align-items: flex-start;
     
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+    bottom: 0;
 
     border-top: 2px solid lightgray;
 }

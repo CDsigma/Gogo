@@ -1,3 +1,7 @@
+.what-we-do-container {
+    min-height: 100%;
+}
+
 .image-div {
     background-image: url("https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/v1/what_we_do/hero_desktop.png");
     background-color: white;
