@@ -10,8 +10,15 @@ export default class Profile extends Component {
             <div>
                 <NavBar />
                 <EditBar />
-                <h1>User's Name</h1>
-                <ProfileNavBar />
+
+                <div className="profile-content-container">
+                    <h1 className="profile-user-name-title">User's Name</h1>
+                    <ProfileNavBar />
+                
+                    <div>
+                        <img src="robot_profile_image.png" className="profile-full-profile-image"/>
+                    </div>
+                </div>
                 <Footer />
             </div>
         )

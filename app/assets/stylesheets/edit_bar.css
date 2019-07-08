@@ -1,4 +1,48 @@
 .profile-edit-bar {
     background-color: black;
     color: white;
+    padding: 10px 0px;
+}
+
+.profile-edit-bar-content {
+    display: flex;
+    flex-direction: row;
+
+    padding: 0px 30px;
+    margin: 0px 80px;
+}
+
+.profile-edit-bar-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.profile-edit-bar-activated-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 14px;
+    color: lightgray;
+    fill: lightgray;
+    margin-left: 60px;
+}
+
+.profile-edit-bar-activated-button:hover {
+    color: white;
+    fill: white;
+}
+
+.eye-icon-svg {
+    width: 26px;
+    height: 26px;
+    fill: white;
+    margin-right: 5px;
+}
+
+.notepad-icon-svg {
+    width: 26px;
+    height: 26px;
+    margin-right: 5px;
 }

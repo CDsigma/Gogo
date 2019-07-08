@@ -7,7 +7,7 @@ export default class ProfileButton extends Component {
 
         return (
             <div className="drop-down-menu-option">
-                <Link to={`users/${currentUserId}`}>
+                <Link to={`/users/${currentUserId}`}>
                     <button className="drop-down-menu-option-title"> Profile </button>
                 </Link>
             </div>

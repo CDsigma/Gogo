@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import NavBarContainer from '../nav_bar/nav_bar';
+import NavBar from '../nav_bar/nav_bar';
+import Footer from '../footer/footer'
 
 export default class home extends Component {
     render() {
         return (
             <div>
-                <NavBarContainer />
+                <NavBar />
+                <Footer />
             </div>
         )
     }
