@@ -85,6 +85,7 @@
     padding-left: 0px;
     padding-right: 0px;
     background-color: rgb(69, 92, 152);
+    cursor: pointer;
 }
 
 #session-demo-login-button:hover {

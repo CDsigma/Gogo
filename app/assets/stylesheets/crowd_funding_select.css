@@ -24,3 +24,55 @@
     display: flex;
     flex-direction: row;
 }
+
+.select-option-go-fund-me-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 414px;
+    height: 201px;
+
+    border: 1px solid lightgray;
+
+    margin: 16px 12px;
+    padding: 40px 32px;
+
+    text-align: center;
+    transition: border 0.3s, box-shadow 0.3s, transform 0.3s, transform 0.3s, fill 0.3s;
+
+    fill: lightgray;
+}
+
+.select-option-go-fund-me-option:hover {
+    border: 1px solid #949494;
+    box-shadow: 0 2px 6px -4px rgba(0,0,0,.2), 0 8px 10px -4px rgba(0,0,0,.14), 0 8px 12px 4px rgba(0,0,0,.05);
+    transform: translateY(-2px);
+    z-index: 10;
+    fill: rgb(80, 181, 109);
+}
+
+.start-a-campaign-go-fund-me-logo {
+    height: 28px;
+    margin-top: 40px;
+    /* fill: lightgray; */
+}
+
+.start-a-campaign-go-fund-me-logo:hover {
+    fill: green;
+}
+
+.select-option-go-fund-me-cost {
+    font-size: 14px;
+    margin-top: 24px;
+    color: lightgray;
+}
+
+.select-option-go-fund-me-para {
+    margin-top: 4px;
+}
+
+.start-a-campaign-gogo-logo {
+    height: 19px;
+} 

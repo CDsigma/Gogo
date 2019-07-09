@@ -67,10 +67,19 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .profile-right-side-details-row {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.profile-right-side-profile-title {
+    margin-left: 15px;
+}
+
+.profile-right-side-details-row-description {
+    margin-left: 4px;
 }
