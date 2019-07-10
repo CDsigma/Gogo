@@ -9,6 +9,9 @@ export default class CrowdFundingSelect extends Component {
                 <h1 className="crowd-funding-select-title">Welcome to Gogo</h1>
                 <h2 className="crowd-funding-select-sub-title">What are you crowdfunding for?</h2>
                 <CrowdFundingOptions />
+                <p className="crowd-funding-select-disclamer-paragrapgh">
+                    All Gogo projects must provide banking information, a government-issued ID, location, and tax information. This information is used to prevent fraud, comply with the law, and disburse project funds.
+                </p>
             </div>
         )
     }

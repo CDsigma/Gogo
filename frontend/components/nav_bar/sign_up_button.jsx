@@ -7,44 +7,45 @@ export default class SignUpButton extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {
-            signUpVisible: false
-        }
+        // this.state = {
+        //     signUpVisible: false
+        // }
 
-        this.toggleSignUpModal = this.toggleSignUpModal.bind(this);
+        // this.toggleSignUpModal = this.toggleSignUpModal.bind(this);
     }
 
     //     this.closeModal = this.openModal.bind(this);
     //     this.openModal = this.closeModal.bind(this);
     // }
 
-    toggleSignUpModal() {
-        console.log("toggleModal")
-        if (this.state.signUpVisible) {
-            this.setState({
-                signUpVisible: false
-            })
-        } else {
-            this.setState({
-                signUpVisible: true
-            })
-        }
-    }
+    // toggleSignUpModal() {
+    //     console.log("toggleModal")
+    //     if (this.state.signUpVisible) {
+    //         this.setState({
+    //             signUpVisible: false
+    //         })
+    //     } else {
+    //         this.setState({
+    //             signUpVisible: true
+    //         })
+    //     }
+    // }
 
     render() {
-        if(this.state.signUpVisible) {
+        // if(this.state.signUpVisible) {
             return (
                 <div>
-                    <button onClick={this.toggleSignUpModal} className="purple-hover-btn">Sign Up</button> 
-                    <SignUpContainer toggleSignUpModal={this.toggleSignUpModal} />
+                    <button onClick={() => this.props.openModal('signup')} className="purple-hover-btn">Sign Up</button> 
+                    {/* <SignUpContainer toggleSignUpModal={this.toggleSignUpModal} /> */}
                 </div>
             )
-        } else {
-            return (
-                <div>
-                    <button onClick={this.toggleSignUpModal} className="purple-hover-btn">Sign Up</button>
-                </div>
-            )
-        }
+        // } 
+        // else {
+        //     return (
+        //         <div>
+        //             <button onClick={this.toggleSignUpModal} className="purple-hover-btn">Sign Up</button>
+        //         </div>
+        //     )
+        // }
     }
 }

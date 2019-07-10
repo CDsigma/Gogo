@@ -6,8 +6,8 @@ export default class IndieGoGoOption extends Component {
     render() {
         return (
             <div>
-                <Link to="/explore">
-                    <div className="select-option-go-fund-me-option">
+                <Link to="/start-a-campaign/a-project">
+                    <div className="select-option-idie-gogo-option">
                         <h2>A project</h2>
                         <p className="select-option-go-fund-me-para">
                             Indiegogo is a crowdfunding platform helping entrepreneurial ideas come to life.

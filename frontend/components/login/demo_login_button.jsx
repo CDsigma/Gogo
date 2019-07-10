@@ -10,8 +10,6 @@ export default class DemoLoginButton extends Component {
     async demoLogin(e) {
         e.preventDefault();
 
-        debugger;
-
         const demoUser = {
             email: 'password',
             password: 'password'

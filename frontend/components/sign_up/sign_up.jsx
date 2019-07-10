@@ -14,6 +14,7 @@ export default class SignUp extends Component {
         };
 
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.switchToSignIn = this.switchToSignIn.bind(this);
     }
 
     handleInput(type) {
@@ -24,7 +25,7 @@ export default class SignUp extends Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        this.props.createNewUser(this.state)
+        this.props.createNewUser(this.state).then(this.props.closeModal);
             //.then(() => this.props.history.push('/user'));
     }
 
@@ -40,16 +41,23 @@ export default class SignUp extends Component {
         );
     }
 
+    switchToSignIn() {
+        // this.props.closeModal();
+        // debugger;
+        console.log("CLICKING BUTTTTON")
+        dispatch(this.props.openModal('login'));
+    }
 
     render() {
         // if (!this.state.visible) {
         //     return <div></div>;
         // }
         return (
-            <div className="session-grey-background" onClick={this.props.toggleSignUpModal}>
-                <div onClick={e => e.stopPropagation()}>
+            // <div className="session-grey-background" onClick={this.props.toggleSignUpModal}>
+                // <div onClick={e => e.stopPropagation()}>
+                <div>
                     <form className="sign-up-session-content" onSubmit={this.handleSubmit}>
-                        <button onClick={this.props.toggleSignUpModal} className="close-icon-button"><CloseIcon /></button>
+                        <button onClick={this.props.closeModal} className="close-icon-button"><CloseIcon /></button>
 
                         <h3 className="session-title">Welcome!</h3>
                         <h4 className="session-login-signup-subtitle">Sign up to join Gogo.</h4>
@@ -71,8 +79,14 @@ export default class SignUp extends Component {
 
                         <button type="submit" className="color-button" id="session-submit-button"> Sign Up </button>
                     </form>
+
+                    <div className="login-signup-option-row" onClick={this.switchToSignIn}>
+                        <h4 className="switch-to-sign-up-text">Here for a Demo? </h4>
+                        <button className="switch-to-sign-up-button"> Sign In </button>
+                    </div>
                 </div>
-            </div>
+                // </div>
+            // </div>
         )
     }
 }

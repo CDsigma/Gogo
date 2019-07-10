@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-import SignUpButton from './sign_up_button'
-import LoginButton from './login_button';
+import SignUpButtonContainer from './sign_up_button_container'
+import LoginButtonContainer from './login_button_container';
 
 export default class LoggedOutOptions extends Component {
     render() {
         return (
             <div className="logged-out-options">
-                <LoginButton />
-                <SignUpButton />
+                <LoginButtonContainer />
+                <SignUpButtonContainer />
             </div>
         )
     }

@@ -24,6 +24,7 @@ export default class Login extends Component {
 
         this.handleSubmit = this.handleSubmit.bind(this);
         this.demoLogin = this.demoLogin.bind(this);
+        this.switchToSignUp = this.switchToSignUp.bind(this);
     }
 
     handleInput(type) {
@@ -34,7 +35,7 @@ export default class Login extends Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        this.props.login(this.state)
+        this.props.login(this.state).then(this.props.closeModal);
         //.then(() => this.props.history.push('/user'));
     }
 
@@ -71,10 +72,11 @@ export default class Login extends Component {
         await sleep(250);
 
         document.getElementById('session-submit-button').click();
-        document.getElementById("password-input").blur();
+        // document.getElementById("password-input").blur();
     }
 
     renderErrors() {
+        // debugger;
         return (
             <ul className="session-error-messages-list">
                 {this.props.errors.map((error, i) => (
@@ -86,16 +88,25 @@ export default class Login extends Component {
         );
     }
 
+    switchToSignUp() {
+        // this.props.closeModal();
+        // debugger;
+        dispatch(this.props.openModal('signup'));
+    }
+
     render() {
         // if (!this.state.visible) {
         //     return <div></div>;
         // }
         // debugger;
         return (
-            <div className="session-grey-background" onClick={this.props.toggleLoginModal}>
-                <div onClick={e => e.stopPropagation()}>
+            // <div className="session-grey-background" onClick={this.props.toggleLoginModal}>
+                // <div onClick={e => e.stopPropagation()}>
+                <div>
                     <form className="session-content" onSubmit={this.handleSubmit}>
-                        <button className="close-icon-button" onClick={this.props.toggleLoginModal}><CloseIcon /></button>
+
+                        <button className="close-icon-button" onClick={this.props.closeModal}><CloseIcon /></button>
+                        
                         <h3 className="session-title">Welcome back!</h3>
                         <h4 className="session-login-signup-subtitle">Log in to continue.</h4>
 
@@ -113,8 +124,14 @@ export default class Login extends Component {
 
                         <div onClick={this.demoLogin} className="color-button" id="session-demo-login-button"> DEMO LOG IN </div>
                     </form>
+
+                    <div className="login-signup-option-row" onClick={this.switchToSignUp}>
+                        <h4 className="switch-to-sign-up-text">New to Gogo?</h4>
+                        <button className="switch-to-sign-up-button"> Sign Up </button>
+                    </div>
                 </div>
-            </div>
+
+            // </div>
         )
     }
 }

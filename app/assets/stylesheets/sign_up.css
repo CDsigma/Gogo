@@ -109,3 +109,28 @@
     color: rgb(226, 25, 65);
     font-size: 16px;
 }
+
+.login-signup-option-row {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.switch-to-sign-up-button {
+    color: black;
+    text-decoration: underline;
+    font-weight: bolder;
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+.switch-to-sign-up-button:hover {
+    color: rgb(229, 16, 117);
+}
+
+.switch-to-sign-up-text {
+    font-weight: lighter;
+}
