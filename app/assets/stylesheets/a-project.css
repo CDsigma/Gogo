@@ -1,0 +1,41 @@
+.a-project-main-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-left: 50px;
+    padding-right: 50px; */
+}
+
+.a-project-content-container {
+    display: flex;
+    flex-direction: column;
+    width: 670px;
+}
+
+.a-project-title {
+    margin-top: 12px;
+}
+
+.a-project-content-subtitle {
+    text-align: center;
+}
+
+.a-project-who-raising-moeny-for-title {
+    margin-top: 40px;
+}
+
+.a-project-who-raising-moeny-for-sub-title {
+    margin: 8px 0px 16px;
+    color: gray;
+}
+
+.who-raising-money-input {
+    border: 1px solid lightgray;
+    width: 100%;
+    height: 35px;
+    padding: 5px 20px;
+}
+
+.who-raising-money-input:focus {
+    border: 1px solid black;
+}

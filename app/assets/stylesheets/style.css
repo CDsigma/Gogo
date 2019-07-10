@@ -88,6 +88,12 @@ body {
     fill: black;
 }
 
+.simple-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* svg .gradient-bg {
   fill:  #fff;
 } */
