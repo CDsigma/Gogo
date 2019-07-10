@@ -63,17 +63,17 @@ export default class SignUp extends Component {
                         <h4 className="session-login-signup-subtitle">Sign up to join Gogo.</h4>
 
                         <p className="session-label">First Name</p>
-                        <input className="session-input" type="text" value={this.state.first_name} onChange={this.handleInput('first_name')}/>
+                        <input placeholder="Your First Name" className="session-input" type="text" value={this.state.first_name} onChange={this.handleInput('first_name')}/>
 
                         <p className="session-label">Last Name</p>
-                        <input className="session-input" type="text" value={this.state.last_name} onChange={this.handleInput('last_name')}/>
+                        <input placeholder="Your Last Name" className="session-input" type="text" value={this.state.last_name} onChange={this.handleInput('last_name')}/>
 
                         <p className="session-label">Email</p>
-                        <input className="session-input" type="text" value={this.state.email} onChange={this.handleInput('email')}/>
+                        <input placeholder="Your Email" className="session-input" type="text" value={this.state.email} onChange={this.handleInput('email')}/>
                        
 
                         <p className="session-label">Password</p>
-                        <input className="session-input" type="password" value={this.state.password} onChange={this.handleInput('password')}/>
+                        <input placeholder="Password" className="session-input" type="password" value={this.state.password} onChange={this.handleInput('password')}/>
 
                         {this.renderErrors()}
 

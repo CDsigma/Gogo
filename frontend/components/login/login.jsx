@@ -111,10 +111,10 @@ export default class Login extends Component {
                         <h4 className="session-login-signup-subtitle">Log in to continue.</h4>
 
                         <p className="session-email-label">Email</p>
-                        <input className="session-input" id='email-input' type="text" value={this.state.email} onChange={this.handleInput('email')} />
+                    <input className="session-input" placeholder="Your Email" id='email-input' type="text" value={this.state.email} onChange={this.handleInput('email')} />
 
                         <p className="session-password-label">Password</p>
-                        <input className="session-input" id="password-input" type="password" value={this.state.password} onChange={this.handleInput('password')} />
+                    <input className="session-input" placeholder="Password" id="password-input" type="password" value={this.state.password} onChange={this.handleInput('password')} />
                         
                         {this.renderErrors()}
 

@@ -10,7 +10,7 @@ export default class WhereFrom extends Component {
                     country of legal residence? If you are raising funds for 
                     a business, where is the business headquartered?
                 </h5>
-                <input className="who-raising-money-input" type="text" />
+                <input placeholder="Your residence country" className="who-raising-money-input" type="text" />
             </div>
         )
     }

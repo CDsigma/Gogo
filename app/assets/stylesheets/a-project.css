@@ -39,3 +39,34 @@
 .who-raising-money-input:focus {
     border: 1px solid black;
 }
+
+.blue-hover-button {
+    color: white;
+    background-color: #7a69b3;
+    width: 170px;
+    height: 48px;
+    margin-top: 40px;
+    padding: 3px 20px;
+    text-align: center;
+    font-size: 14px;
+    align-self: center;
+    border-radius: 3px;
+}
+
+.blue-hover-button:hover {
+    background-color: #5d4ba8;
+}
+
+.a-project-payment-information-title {
+    font-size: 14px;
+    margin-top: 64px;
+    align-self: center;
+    color: #949494
+}
+
+.a-project-payment-information-info {
+    font-size: 14px;
+    align-self: center;
+    color: #949494;
+    margin-bottom: 36px;
+}
