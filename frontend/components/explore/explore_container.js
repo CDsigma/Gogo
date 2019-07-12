@@ -3,6 +3,7 @@ import { getCampaigns } from '../../actions/campaign_actions';
 import Explore from './explore';
 
 const mapStateToProps = (state) => {
+    // debugsger;
     return {
         campaigns: Object.values(state.entities.campaigns)
     };

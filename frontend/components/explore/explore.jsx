@@ -3,16 +3,17 @@ import NavBar from '../nav_bar/nav_bar'
 
 export default class Explore extends Component {
 
-    componentWillMount() {
-        this.props.getCampaigns();
-    }
-    // componentDidMount() {
-        
+    // componentWillMount() {
     //     this.props.getCampaigns();
-    //     // debugger;
-    // }
+    // // }
+    componentDidMount() {
+        
+        this.props.getCampaigns();
+        // debugger;
+    }
 
     render() {
+        // debugger;
         if(!this.props.campaigns) return null;
         // if (!this.campaign.title) return null;
         // debugger;
@@ -32,7 +33,7 @@ export default class Explore extends Component {
                         </div>
                     </div>
             } else {
-                debugger;
+                // debugger;
                 return <div></div>
             }
         })

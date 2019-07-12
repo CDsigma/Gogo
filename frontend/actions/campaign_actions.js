@@ -8,6 +8,11 @@ const receiveCurrentCampaign = campaign => ({
     campaign
 })
 
+const receiveAllCampaigns = campaigns => ({
+    type: GET_ALL_CAMPAIGNS,
+    campaigns
+})
+
 export const createNewCampaign = campaign => dispatch => (
     CampaignApiUtil.createNewCampaign(campaign).then(campaign => (
         dispatch(receiveCurrentCampaign(campaign))
@@ -16,5 +21,5 @@ export const createNewCampaign = campaign => dispatch => (
 )
 
 export const getCampaigns = () => dispatch => (
-    CampaignApiUtil.getCampaigns().then(campaigns => dispatch(receiveCurrentCampaign(campaigns)))
+    CampaignApiUtil.getCampaigns().then(campaigns => dispatch(receiveAllCampaigns(campaigns)))
     )

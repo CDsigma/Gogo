@@ -20,6 +20,7 @@ class StartMyCampaignButton extends Component {
         // debugger;
         console.log("SUBMITTING")
         //this.props.history.push(`/${campaign.campaign.id}/edit`)
+        // debugger;
         this.props.createNewCampaign(this.state).then((campaign) => this.props.history.push(`/${campaign.campaign.id}/edit`));
     }
 
