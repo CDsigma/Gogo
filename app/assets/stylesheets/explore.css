@@ -1,6 +1,7 @@
 .explore-campaigns-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .explore-individual-campaig-div {
