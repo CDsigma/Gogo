@@ -42,3 +42,24 @@
     color: gray;
     margin-top: 10px;
 }
+
+.explore-explore-header-div {
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: url("https://g0.iggcdn.com/assets/explore/desktop/campaign-d867fa38edb5ad270cd80df5816b0268df9e3bfa622a136e4fa9969c71156649.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.explore-explore-header-title {
+    font-size: 48px;
+    margin-bottom: 32px;
+}
+
+.explore-explore-header-sub-title {
+    font-size: 24px;
+}

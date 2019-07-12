@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import NavBar from '../nav_bar/nav_bar'
+import ExploreHeader from './explore_header'
 
 export default class Explore extends Component {
 
@@ -40,6 +41,7 @@ export default class Explore extends Component {
         return (
             <div>
                 <NavBar />
+                <ExploreHeader />
                 <div className="explore-campaigns-container">
                     {campaigns}
                 </div>
