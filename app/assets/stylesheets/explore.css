@@ -1,0 +1,43 @@
+.explore-campaigns-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.explore-individual-campaig-div {
+    width: 265px;
+    height: 325px;
+    border: 1px solid lightgray;
+    margin: 20px;
+    transition: border 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.explore-individual-campaig-div:hover {
+    border: 1px solid #949494;
+    box-shadow: 0 2px 6px -4px rgba(0,0,0,.2), 0 8px 10px -4px rgba(0,0,0,.14), 0 8px 12px 4px rgba(0,0,0,.05);
+    transform: translateY(-2px);
+    /* fill: rgb(80, 181, 109); */
+}
+
+.explore-individual-campaign-text-container {
+    padding: 10px;
+}
+
+.explore-individual-campaign-funding {
+    /* margin-left: 10px;
+    margin-right: 10px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+    font-size: 12px;
+    color: green
+}
+
+.explore-individual-campaign-title {
+    margin-top: 15px;
+}
+
+.explore-individual-campaign-tagline {
+    font-size: 11px;
+    color: gray;
+    margin-top: 10px;
+}

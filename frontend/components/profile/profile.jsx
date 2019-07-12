@@ -13,7 +13,7 @@ export default class Profile extends Component {
                 <EditBar />
 
                 <div className="profile-content-container">
-                    <h1 className="profile-user-name-title">User's Name</h1>
+                    <h1 className="profile-user-name-title">Sally Smith</h1>
                     <ProfileNavBar />
                 
                     <div className="profile-row">

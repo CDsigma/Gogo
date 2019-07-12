@@ -42,7 +42,7 @@
     padding: 40px 32px;
 
     text-align: center;
-    transition: border 0.3s, box-shadow 0.3s, transform 0.3s, transform 0.3s, fill 0.3s;
+    transition: border 0.1s, box-shadow 0.3s, transform 0.3s, transform 0.3s, fill 0.3s;
 
     fill: lightgray;
 }
