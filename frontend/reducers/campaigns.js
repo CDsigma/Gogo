@@ -1,10 +1,12 @@
-import { RECEIVE_CAMPAIGN } from '../actions/campaign';
+import { CREATE_CAMPAIGN } from '../actions/campaign_actions';
 
 export default (state = {}, action) => {
     Object.freeze(state);
+    // debugger;
     switch (action.type) {
-        case RECEIVE_CAMPAIGN:
-            const campaign = {};
+        case CREATE_CAMPAIGN:
+            const currentCampaign = action.campaign
+            return Object.assign({}, currentCampaign);
             // action.chirps.forEach(chirp => {
             //     chirps[chirp.id] = chirp;
             // });

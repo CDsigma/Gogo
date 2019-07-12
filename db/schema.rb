@@ -10,20 +10,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_03_165555) do
+ActiveRecord::Schema.define(version: 2019_07_11_175952) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "users", force: :cascade do |t|
-    t.string "email"
-    t.string "session_token"
-    t.string "password_digest"
-    t.string "first_name"
-    t.string "last_name"
-    t.string "profile_body"
+  create_table "campaigns", force: :cascade do |t|
+    t.integer "author_id", null: false
+    t.string "title", null: false
+    t.string "project_description"
+    t.string "tagline"
+    t.string "image_url"
+    t.string "location"
+    t.integer "campaign_duration"
+    t.boolean "launched", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["author_id"], name: "index_campaigns_on_author_id"
+    t.index ["title"], name: "index_campaigns_on_title"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "email", null: false
+    t.string "session_token", null: false
+    t.string "password_digest", null: false
+    t.string "first_name", null: false
+    t.string "last_name", null: false
+    t.string "profile_body", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["session_token"], name: "index_users_on_session_token", unique: true
   end
 
 end

@@ -23,6 +23,7 @@
     width: 352px;
     height: 550px;
     padding: 40px 64px;
+    padding-top: 0px;
 }
 
 .sign-up-session-content {
@@ -33,6 +34,7 @@
     width: 352px;
     height: 750px;
     padding: 40px 64px;
+    padding-top: 0px;
 }
 
 .session-title {
@@ -57,6 +59,30 @@
 .session-password-label {
     margin-top: 32px;
     width: 100%;
+    /* letter-spacing: 0em; */
+    /* letter-spacing: 0.0625em; */
+    /* letter-spacing: -4px; */
+}
+
+
+
+.session-input-password {
+    /* letter-spacing: 0em; */
+    /* letter-spacing: -5px; */
+
+    /* font-size: 20px; */
+    /* -webkit-text-security:square; */
+    /* -webkit-text-security: circle !important; */
+    -webkit-text-security:square  !important;
+
+    border: 1px solid lightgray;
+    width: 320px;
+    height: 35px;
+    padding: 5px 20px;
+}
+
+.session-input-password:focus {
+    border: 1px solid black;
 }
 
 .session-input {
@@ -92,8 +118,20 @@
     background-color: rgb(63, 84, 143);
 }
 
+.close-icon-button-div {
+    display: flex;
+    /* align-items: flex-end; */
+    /* align-content: flex-end; */
+    /* justify-items: flex-end; */
+    justify-content: flex-end;
+    background-color: white;
+}
+
 .close-icon-button {
-    align-self: flex-end;
+    /* align-self: flex-end; */
+    padding: 15px;
+    padding-right: 18px;
+    
 }
 
 .session-additional-option-text {
@@ -133,4 +171,12 @@
 
 .switch-to-sign-up-text {
     font-weight: lighter;
+}
+
+.session-input-password::placeholder {
+    font-family: 'Noto Sans HK', 'PT Sans', sans-serif;
+}
+
+.session-input-password  {
+    font-family: sans-serif;
 }

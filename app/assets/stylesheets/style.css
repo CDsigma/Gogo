@@ -78,6 +78,24 @@ body {
     padding: 10px;
 }
 
+
+.blue-hover-button {
+    color: white;
+    background-color: #7a69b3;
+    width: 170px;
+    height: 48px;
+    margin-top: 40px;
+    padding: 3px 20px;
+    text-align: center;
+    font-size: 14px;
+    align-self: center;
+    border-radius: 3px;
+}
+
+.blue-hover-button:hover {
+    background-color: #5d4ba8;
+}
+
 .close-icon {
     width: 16px;
     height: 16px;
@@ -92,6 +110,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.simple-row {
+    display: flex;
 }
 
 /* svg .gradient-bg {

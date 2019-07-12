@@ -56,8 +56,11 @@ export default class SignUp extends Component {
             // <div className="session-grey-background" onClick={this.props.toggleSignUpModal}>
                 // <div onClick={e => e.stopPropagation()}>
                 <div>
+                    <div className="close-icon-button-div">
+                        <button className="close-icon-button" onClick={this.props.closeModal}><CloseIcon /></button>
+                    </div>
+
                     <form className="sign-up-session-content" onSubmit={this.handleSubmit}>
-                        <button onClick={this.props.closeModal} className="close-icon-button"><CloseIcon /></button>
 
                         <h3 className="session-title">Welcome!</h3>
                         <h4 className="session-login-signup-subtitle">Sign up to join Gogo.</h4>
@@ -73,7 +76,7 @@ export default class SignUp extends Component {
                        
 
                         <p className="session-label">Password</p>
-                        <input placeholder="Password" className="session-input" type="password" value={this.state.password} onChange={this.handleInput('password')}/>
+                        <input placeholder="Password" className="session-input-password" type="password" value={this.state.password} onChange={this.handleInput('password')}/>
 
                         {this.renderErrors()}
 
