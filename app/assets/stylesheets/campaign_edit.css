@@ -15,6 +15,7 @@
     width: 230px;
     /* height: 100%; */
     background-color: rgb(42, 42, 42);
+    color: white;
 }
 
 .campaign-edit-right-side {
@@ -23,6 +24,7 @@
     right: 0px;
     bottom: 0px;
     top: 0px;
+    background-color: rgb(250, 250, 250);
 }
 
 .campaign-nav-bar {
@@ -31,8 +33,10 @@
     align-items: center;
     background-color: rgb(245, 245, 245);
     height: 60px;
+    padding: 10px;
     padding-left: 40px;
     padding-right: 40px;
+    border-bottom: 1px solid RGB(190, 190, 190);
 }
 
 .campaign-nav-bar-title {
@@ -65,14 +69,61 @@
 
 .campaign-edit-form {
     background-color: rgb(250, 250, 250);
+    border-bottom: 1px solid lightgray;
     padding: 30px 50px;
+    padding-left: 0px;
+    margin-left: 30px;
+    width: 700px;
+    padding-bottom: 50px;
 }
 
 .campaign-edit-form-input {
     background-color: white;
     border: 1px solid lightgray;
+    padding: 20px;
+    width: 100%;
+
+    transition: border 0.2s;
+}
+
+.campaign-edit-form-input:focus {
+    border: 1px solid black;
 }
 
 .campaign-edit-form-section-title {
     margin-top: 40px;
+    margin-bottom: 8px;
+}
+
+.campaign-edit-form-basic-title {
+    margin-bottom: 10px;
+}
+
+.campaign-edit-form-gray-container {
+    background-color: rgb(250, 250, 250);
+}
+
+.campaign-edit-section-sub-text {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.campaign-edit-save-continue-button-div {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(250, 250, 250);
+    padding-top: 40px;
+}
+
+#save-and-continue-button {
+    margin-top: 0px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 30px;
+    width: 120px;
+    font-size: 15px;
+    border-radius: 2px;
+    margin-bottom: 20px;
 }
