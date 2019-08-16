@@ -9,11 +9,29 @@ class Api::CampaignsController < ApplicationController
         end
     end
 
+    def update
+        # debugger
+        @campaign = Campaign.find(params[:id])
+	
+        if @campaign.update_attributes(campaign_params)
+            # console.log("Saved CORRECTLY!!!!")
+            # redirect_to :action => 'show', :id => @campaign
+        else
+            # @subjects = Subject.all
+            # render :action => 'edit'
+            render json: @campaign.errors.full_messages, status: 422
+        end
+    end
+
     def index
         @campaigns = Campaign.all
     end
 
+    def show
+        @campaign = Campaign.find(params[:id])
+    end
+
     def campaign_params
-        params.require(:campaign).permit(:author_id, :title, :launched)
+        params.require(:campaign).permit(:author_id, :title, :launched, :id, :project_description, :tagline, :image_url, :location, :campaign_duration, :funding, :funding_goal)
     end
 end

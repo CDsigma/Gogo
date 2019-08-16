@@ -9,7 +9,7 @@ class StartMyCampaignButton extends Component {
         // debugger;
         this.state = {
             author_id: currentUserId,
-            title: "My Campaign Title", 
+            title: "My Campaign Title Test", 
             launched: false
         };
 

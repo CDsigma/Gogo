@@ -23,6 +23,8 @@ ActiveRecord::Schema.define(version: 2019_07_11_175952) do
     t.string "image_url"
     t.string "location"
     t.integer "campaign_duration"
+    t.integer "funding_goal"
+    t.integer "funding"
     t.boolean "launched", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

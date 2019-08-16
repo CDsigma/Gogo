@@ -1,4 +1,4 @@
-import { CREATE_CAMPAIGN, GET_ALL_CAMPAIGNS } from '../actions/campaign_actions';
+import { CREATE_CAMPAIGN, GET_ALL_CAMPAIGNS, GET_CAMPAIGN } from '../actions/campaign_actions';
 import { merge } from 'lodash';
 
 export default (state = {}, action) => {
@@ -14,7 +14,10 @@ export default (state = {}, action) => {
             // });
             // return chirps;
         case GET_ALL_CAMPAIGNS:
-            return merge({}, state, action.campaigns)
+            return merge({}, state, action.campaigns);
+        case GET_CAMPAIGN:
+            // debugger;
+            return merge({}, state, {currentCampaign: action.campaign});
         default:
             return state;
     }

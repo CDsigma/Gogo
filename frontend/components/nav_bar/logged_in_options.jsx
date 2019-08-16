@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import DropDown from './user_drop_down_options'
+import UserDropDownOptionsContainer from './user_drop_down_options_container'
 
 export default class LoggedInOptions extends Component {
 
@@ -37,7 +37,7 @@ export default class LoggedInOptions extends Component {
                 <div className="logged-in-options">
                     <img onClick={this.toggleMenu} className="logged-in-options-robot-image" src={"user-default-profile-picture.png"} alt=""/>
                     <button onClick={this.toggleMenu} className="user-menu">{currentUser}</button>
-                    <DropDown />
+                    <UserDropDownOptionsContainer />
                 </div>
             )
         } else {

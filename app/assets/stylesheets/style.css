@@ -116,6 +116,16 @@ body {
     display: flex;
 }
 
+.simple-row-center-y {
+    display: flex;
+    align-items: center;
+}
+
+.simple-row-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* svg .gradient-bg {
   fill:  #fff;
 } */

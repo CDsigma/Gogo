@@ -7,10 +7,18 @@ export const createNewCampaign = campaign => {
 }
 
 export const updateCampaign = campaign => {
+    // debugger
     return $.ajax({
         method: 'PATCH',
-        url: '/api/campaigns/edit',
+        url: `/api/campaigns/${campaign.id}`,
         data: {campaign}
+    })
+}
+
+export const getCampaign = campaignID => {
+    return $.ajax({
+        url: `/api/campaigns/${campaignID}`,
+        method: 'GET',
     })
 }
 

@@ -8,6 +8,9 @@
 }
 
 .campaign-edit-side-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: fixed;
     left: 0px;
     top: 0px;
@@ -126,4 +129,41 @@
     font-size: 15px;
     border-radius: 2px;
     margin-bottom: 20px;
+}
+
+.campaign-edit-side-bar-campaign-title {
+    padding: 15px 20px;
+    width: 100%;
+    font-size: 14px;
+}
+
+.campaign-edit-side-bar-section-title {
+    padding: 15px 20px;
+    width: 100%;
+    font-size: 14px;
+}
+
+.campaign-edit-side-bar-section-title:hover {
+    background-color: rgb(119, 107, 174);
+}
+
+.edit-drop-down-menu-option {
+    /* background-color: blue; */
+    font-size: 14px;
+    padding: 15px 20px 15px 28px;
+    background-color: black;
+}
+
+.edit-drop-down-menu-option-selected {
+    font-size: 14px;
+    padding: 15px 20px 15px 28px;
+    background-color: black;
+    border-left: 5px solid rgb(119, 107, 174);
+}
+.edit-drop-down-menu-option-selected:hover {
+    background-color: rgb(119, 107, 174);
+}
+
+.edit-drop-down-menu-option:hover {
+    background-color: rgb(119, 107, 174);
 }

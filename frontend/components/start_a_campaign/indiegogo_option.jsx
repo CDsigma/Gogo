@@ -12,7 +12,7 @@ export default class IndieGoGoOption extends Component {
                         <div className="select-option-idie-gogo-option">
                             <h2>A project</h2>
                             <p className="select-option-go-fund-me-para">
-                                Indiegogo is a crowdfunding platform helping entrepreneurial ideas come to life.
+                                Gogo is a crowdfunding platform helping entrepreneurial ideas come to life.
                             </p>
                             <h4 className="select-option-go-fund-me-cost">5% platform fee</h4>
                             <GogoLogo />
@@ -25,7 +25,7 @@ export default class IndieGoGoOption extends Component {
                 <div onClick={() => this.props.openModal('login')} className="select-option-idie-gogo-option">
                     <h2>A project</h2>
                     <p className="select-option-go-fund-me-para">
-                        Indiegogo is a crowdfunding platform helping entrepreneurial ideas come to life.
+                        Gogo is a crowdfunding platform helping entrepreneurial ideas come to life.
                                 </p>
                     <h4 className="select-option-go-fund-me-cost">5% platform fee</h4>
                     <GogoLogo />

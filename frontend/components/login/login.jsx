@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import NavBar from '../nav_bar/nav_bar';
 import CloseIcon from '../general_purpose_icons/close_icon'
-import DemoLogin from './demo_login_button'
+import DemoLogin from './demo_login_button';
+// import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+// import { TransitionablePortal } from 'semantic-ui-react';
+// import { TransitionablePortal } from 'semantic-ui-css';
+
 
 export default class Login extends Component {
 
@@ -102,7 +106,8 @@ export default class Login extends Component {
         return (
             // <div className="session-grey-background" onClick={this.props.toggleLoginModal}>
                 // <div onClick={e => e.stopPropagation()}>
-                <div>
+            <div>
+                {/* <ReactCSSTransitionGroup transitionName="fade" transitionEnterTimeout={10000} transitionLeaveTimeout={10000}> */}
                     <div className="close-icon-button-div">
                         <button className="close-icon-button" onClick={this.props.closeModal}><CloseIcon /></button>
                     </div>
@@ -131,9 +136,8 @@ export default class Login extends Component {
                         <h4 className="switch-to-sign-up-text">New to Gogo?</h4>
                         <button className="switch-to-sign-up-button"> Sign Up </button>
                     </div>
-                </div>
-
-            // </div>
+                {/* </ ReactCSSTransitionGroup> */}
+            </div>
         )
     }
 }

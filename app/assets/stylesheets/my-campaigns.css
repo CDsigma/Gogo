@@ -1,0 +1,43 @@
+.my-campaign {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.my-campaigns-title {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+.my-campaign-image {
+    width: 150px;
+}
+
+.my-campaign-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+}
+
+.my-campaign-campaign-id {
+    font-size: 14px;
+    color: gray;
+    margin-top: 8px;
+}
+
+.my-campaign-draft-icon {
+    font-size: 12px;
+    color: white;
+    background-color: gray;
+    padding: 3px 6px;
+    border-radius: 3px;
+    margin-left: 8px;
+}
+
+.my-campaign-author {
+    color: #E51075;
+    margin-left: 8px;
+}

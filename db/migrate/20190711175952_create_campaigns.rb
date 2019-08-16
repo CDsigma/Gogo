@@ -9,6 +9,8 @@ class CreateCampaigns < ActiveRecord::Migration[5.2]
       t.string :image_url
       t.string :location
       t.integer :campaign_duration
+      t.integer :funding_goal
+      t.integer :funding
       t.boolean :launched, null: false
 
       t.timestamps

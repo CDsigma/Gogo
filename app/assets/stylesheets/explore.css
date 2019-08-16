@@ -6,7 +6,7 @@
 
 .explore-individual-campaig-div {
     width: 265px;
-    height: 325px;
+    height: 420px;
     border: 1px solid lightgray;
     margin: 20px;
     transition: border 0.2s, box-shadow 0.2s, transform 0.2s;
@@ -62,4 +62,68 @@
 
 .explore-explore-header-sub-title {
     font-size: 24px;
+}
+
+.explore-individual-campaign-image {
+    height: 200px;
+    /* overflow: hidden; */
+    object-fit: cover;
+    object-position: 0 0;
+    display: flex;
+    
+}
+
+.explore-individual-campaign-days-left {
+    display: flex;
+    padding: 10px;
+    font-size: 13px;
+}
+
+.icon-clock {
+    fill: rgb(106, 106, 106);
+}
+
+.explore-clock {
+    width: 10px;
+    height: 10px;
+    margin-right: 8px;
+}
+
+.explore-funding-section {
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.explore-funding-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #6a6a6a;
+    align-items: flex-end;
+    margin: 4px 0px;
+}
+
+.explore-progress-bar {
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    background-color: rgb(245, 245, 245);
+    height: 8px;
+    border-radius: 8px;
+}
+
+.explore-progress-bar-filler {
+    background-color: rgb(100, 199, 154);
+    height: 100%;
+    border-radius: 8px;
+}
+
+.explore-individual-funding-amount {
+    color: black;
+    font-size: 18px;
+    margin-right: 6px;
+}
+
+.explore-individual-funding-container {
+    display: flex;
+    align-items: flex-end;
 }
