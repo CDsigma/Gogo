@@ -131,7 +131,8 @@
     /* align-self: flex-end; */
     padding: 15px;
     padding-right: 18px;
-    
+    padding-left: 5px;
+    padding-bottom: 5px;
 }
 
 .session-additional-option-text {

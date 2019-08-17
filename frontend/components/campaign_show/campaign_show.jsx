@@ -69,7 +69,7 @@ export default class CampaignShow extends Component {
                                 </div>
                             </div>
                         </div>
-                        <button className="color-button" id="show-campaign-back-it-button"><b>BACK IT</b></button>
+                        <button onClick={() => this.props.openModal('contribute')} className="color-button" id="show-campaign-back-it-button"><b>BACK IT</b></button>
                     </div>
                     
                 </div>

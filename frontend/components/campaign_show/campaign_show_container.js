@@ -1,4 +1,5 @@
 import { connect } from 'react-redux';
+import { openModal } from '../../actions/modal_action';
 import { getCampaign } from '../../actions/campaign_actions';
 import CampaignShow from './campaign_show';
 
@@ -19,7 +20,8 @@ const mapStateToProps = (state, ownProps) => {
 };
 
 const mapDispatchToProps = dispatch => ({
-    getCampaign: (campaignID) => dispatch(getCampaign(campaignID))
+    getCampaign: (campaignID) => dispatch(getCampaign(campaignID)),
+    openModal: modal => dispatch(openModal(modal)),
     // campaigns: Object.va() => dispatch(getCampaigns()),
 });
 
