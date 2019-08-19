@@ -14,6 +14,7 @@ export default class home extends Component {
                     <div className="home-campaigns">
                         <div className="home-gray-background">
                             <div className="home-campaign-content">
+                                <h4 className="home-campaign-pick">GOGO PICKS</h4>
                                 <h4 className="home-campaign-title"><b>The E-Scooter that fits in a backpack</b></h4>
                                 <h4 className="home-campaign-tagline">MiniFalcon is a fast, powerful, compact and high-performance electric scooter</h4>
                                 <button className="home-campaign-button"><b>SEE CAMPAIGN</b></button>

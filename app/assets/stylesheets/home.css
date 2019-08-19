@@ -30,6 +30,17 @@
     font-size: 14px;
 }
 
+.home-campaign-pick {
+    font-size: 12px;
+    margin-bottom: 10px;
+    background-color: white;
+    color: black;
+    width: 73px;
+    padding: 3px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
 .home-campaign-button {
     font-size: 14px;
 }
