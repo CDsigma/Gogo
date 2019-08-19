@@ -106,11 +106,11 @@ body {
     fill: black;
 }
 
-.simple-column-center {
+/* .simple-column-center {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
 
 .simple-row {
     display: flex;
@@ -126,6 +126,15 @@ body {
     justify-content: space-between;
 }
 
+.simple-column-center-x {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.simple-width-100pc {
+    width: 100%;
+}
 /* svg .gradient-bg {
   fill:  #fff;
 } */

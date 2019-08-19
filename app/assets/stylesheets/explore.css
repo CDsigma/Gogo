@@ -6,7 +6,7 @@
 
 .explore-individual-campaig-div {
     width: 265px;
-    height: 420px;
+    height: 480px;
     border: 1px solid lightgray;
     margin: 20px;
     transition: border 0.2s, box-shadow 0.2s, transform 0.2s;

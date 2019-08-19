@@ -51,9 +51,9 @@ export default class Explore extends Component {
                                             <div className="explore-individual-funding-amount">{campaign.funding}</div>
                                              USD raised
                                          </div>
-                                        <div>{campaign.funding/campaign.funding_goal}%</div>
+                                        <div>{Math.floor((campaign.funding/campaign.funding_goal)*100)}%</div>
                                     </div>
-                                    <ProgressBar />
+                                    <ProgressBar percentage={Math.floor((campaign.funding / campaign.funding_goal) * 100)}/>
                                 </div>
                                 <div className="explore-individual-campaign-days-left">
                                     <Clock />

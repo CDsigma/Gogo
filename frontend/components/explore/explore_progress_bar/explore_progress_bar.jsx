@@ -17,10 +17,10 @@ export default class ExploreProgressBar extends Component {
 
     render() {
         
-
+        // debugger;
         return (
             <div className="explore-progress-bar">
-                <Filler className="explore-progress-bar-filler" percentage={this.state.percentage} />
+                <Filler className="explore-progress-bar-filler" percentage={this.props.percentage} />
             </div>
         )
     }

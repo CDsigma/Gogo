@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import NavBar from '../nav_bar/nav_bar';
-import CloseIcon from '../general_purpose_icons/close_icon'
+import CloseIcon from '../general_purpose_icons/close_icon';
 import DemoLogin from './demo_login_button';
 // import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 // import { TransitionablePortal } from 'semantic-ui-react';

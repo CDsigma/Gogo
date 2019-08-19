@@ -16,7 +16,8 @@ export default class CampaignShow extends Component {
         let fundingGoal = <div></div>;
         let image = <div></div>;
         let tagline = <div></div>;
-        let percentFunded = <div></div>;
+        let percentFundedDiv = <div></div>;
+        let percentFunded = 0;
         let description = <div></div>;
 
         if(this.props.campaign) {
@@ -27,8 +28,9 @@ export default class CampaignShow extends Component {
             fundingGoal = <div>{this.props.campaign.funding_goal}</div>;
             image = <img className="show-campaign-image-container" src={`${this.props.campaign.image_url}`} alt=""/>;
             tagline = <div>{this.props.campaign.tagline}</div>;
-            percentFunded = <div>{this.props.campaign.funding / this.props.campaign.funding_goal}</div>;
+            percentFundedDiv = <div>{Math.floor((this.props.campaign.funding / this.props.campaign.funding_goal)*100)}</div>;
             // debugger;
+            percentFunded = Math.floor((this.props.campaign.funding / this.props.campaign.funding_goal) * 100);
             description = <div>{this.props.campaign.project_description}</div>
         }
         // debugger;
@@ -56,11 +58,11 @@ export default class CampaignShow extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <ProgressBar />
+                            <ProgressBar percentage={percentFunded}/>
                             <div className="show-campaign-progress-under-bar">
                                 <div>
                                     <div className="simple-row">
-                                        {percentFunded}% of ${fundingGoal}
+                                        {percentFundedDiv}% of ${fundingGoal}
                                     </div>
                                 </div>
                                 <div className="show-campaign-campaign-duration">
