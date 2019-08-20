@@ -1,7 +1,11 @@
 import React, { Component } from 'react'
 
 const Filler = (props) => {
-    return <div className="explore-progress-bar-filler" style={{ width: `${props.percentage}%` }} />
+    if (props.percentage > 100) {
+        return <div className="explore-progress-bar-filler" style={{ width: `${100}%` }} />
+    } else {
+        return <div className="explore-progress-bar-filler" style={{ width: `${props.percentage}%` }} />
+    }
 }
 
 export default class ExploreProgressBar extends Component {

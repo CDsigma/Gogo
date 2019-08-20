@@ -75,10 +75,10 @@ export default class CampaignShow extends Component {
                     </div>
                     
                 </div>
-                <div>
-                    <div>Overview</div>
-                    {description}
-                </div>
+                {/* <div className="show-campaign-desc-section">
+                    <div className="show-campaign-section-title">Overview</div>
+                    <div className="show-campaign-desc-text">{description}</div>
+                </div> */}
             </div>
         )
     }

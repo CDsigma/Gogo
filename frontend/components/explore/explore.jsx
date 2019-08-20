@@ -21,8 +21,9 @@ export default class Explore extends Component {
         if(!this.props.campaigns) return null;
         // if (!this.campaign.title) return null;
         // debugger;
-        let campaigns = this.props.campaigns.map(campaign => {
+        let campaigns = this.props.campaigns.map((campaign, i, j) => {
             // debugger;
+            if(!(campaign.id <= 5 && i === j.length-1)) {
             if (campaign && campaign.title && typeof campaign.title !== 'undefined') {
                 // debugger;
                 // return <li>{campaign.title}</li>
@@ -69,6 +70,7 @@ export default class Explore extends Component {
                 // debugger;
                 return <div></div>
             }
+        }
         })
         return (
             <div>

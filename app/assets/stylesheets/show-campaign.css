@@ -14,6 +14,7 @@
 
 .show-campaign-right-side {
     padding: 0px 20px;
+    width: 485px;
 }
 
 .show-campaign-funding-label {
@@ -72,4 +73,17 @@
 #show-campaign-back-it-button {
     font-size: 15px;
     margin-top: 20px;
+}
+
+.show-campaign-desc-section {
+    padding: 40px;
+}
+
+.show-campaign-section-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.show-campaign-desc-text {
+    width: 75%;
 }
