@@ -10,10 +10,10 @@ export default class UserDropDownOptions extends Component {
         // debugger;
         return (
             <div className="drop-down-menu">
-                <Link to={`/users/${this.props.currentUserId}/campaigns`}>
+                {/* <Link to={`/users/${this.props.currentUserId}/campaigns`}>
                     <UserDropDownOption title={"My Campaigns"} />
-                </Link>
-                <UserDropDownOption title={"My Contributions"} />
+                </Link> */}
+                {/* <UserDropDownOption title={"My Contributions"} /> */}
                 <ProfileButton />
                 <LogoutButtonContainer />
             </div>

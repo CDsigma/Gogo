@@ -14,7 +14,7 @@ export default class Profile extends Component {
         return (
             <div className="profile-page-container">
                 <NavBar />
-                <EditBar />
+                {/* <EditBar /> */}
 
                 <div className="profile-content-container">
                     <h1 className="profile-user-name-title">{firstName} {lastName}</h1>

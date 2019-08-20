@@ -10,7 +10,7 @@ export default class ProfileRightSide extends Component {
                         <h2 className="profile-right-side-profile-title">About Me</h2>
                     </div>
 
-                    <div className="profile-right-side-details-row">
+                    {/* <div className="profile-right-side-details-row">
                         <h2>#</h2>
                         <h4 className="profile-right-side-details-row-description"> Campaigns</h4>
                     </div>
@@ -21,7 +21,7 @@ export default class ProfileRightSide extends Component {
                     <div className="profile-right-side-details-row">
                         <h2>#</h2>
                         <h4 className="profile-right-side-details-row-description">Contributions</h4>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         )
