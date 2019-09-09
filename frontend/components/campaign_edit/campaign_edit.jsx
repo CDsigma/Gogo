@@ -46,7 +46,7 @@ export default class CampaignEdit extends Component {
             launched: true
         }, () => {
             // debugger
-            this.props.updateCampaign(this.state);
+                this.props.updateCampaign(this.state).then(this.props.history.push('/explore'));
         })
         // debugger;
         //.then(() => this.props.history.push('/user'));
@@ -55,16 +55,16 @@ export default class CampaignEdit extends Component {
     render() {
         return (
             <div className="campaign-edit-simple-row">
-                <div className="campaign-edit-left-side">
+                {/* <div className="campaign-edit-left-side">
                     <SideBar />
-                </div>
+                </div> */}
                 <div className="campaign-edit-right-side">
                     <NavBar />
                     {/* <CampaignNavBar editCampaign={this.props.editCampaign}/> */}
 
                     <div className="campaign-nav-bar">
                         <h4 className="campaign-nav-bar-title"><b>Campaign/Basics</b></h4>
-                        <button onClick={this.handleSubmit} className="campaign-nav-bar-save-campaign-button">Save Campaign</button>
+                        {/* <button onClick={this.handleSubmit} className="campaign-nav-bar-save-campaign-button">Save Campaign</button> */}
                         <button onClick={this.handleLaunch} className="blue-hover-button" id="review-and-launch-button">{/*REVIEW & */}<b>SAVE   &   LAUNCH</b></button>
                     </div>
                     {/* <CampaignEditForm /> */}
@@ -111,9 +111,9 @@ export default class CampaignEdit extends Component {
 
                         </div>
                     </div>
-                    <div className="campaign-edit-save-continue-button-div">
+                    {/* <div className="campaign-edit-save-continue-button-div">
                         <button onClick={this.handleSubmit} className="blue-hover-button" id="save-and-continue-button"><b>Save & Continue</b></button>
-                    </div>
+                    </div> */}
                     <Footer />
                 </div>
                 
